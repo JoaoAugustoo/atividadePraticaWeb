@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+  <!--boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/boo-tstrap.min.css"
+  rel="stylesheet" integrity="sha384F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+  crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/boo-tstrap.bundle.min.js"
+integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> 
+
+      <meta charset="UTF-8">
+      <meta htt-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+      <!-- texto exibido na aba do navegador-->
+      <title>Atividade Prática João</title>
+      <style type="text/css">
+
+        <!--formatação da pagina-->
+        body { position: relative; background-color: rgba(253, 247, 247,0.767);}
+
+        <!--formatação da tabela que recebe array-->
+        .aspecial {font: bold; background-color: rgba(173, 241, 219); border:1px solid #f00;}
+        body ,head{
+          position:relative;
+          width: 1349px;
+          height: 755px;
+          margin: auto;
+        }
+      </style>
+</head>
+
+  <body>
+      <!--<img src="//364340-1212136-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/03/banner-header.gif">-->
+      <img src="https://media.giphy.com/media/J1vgL62XyWv9sGcnTU/giphy.gif" height="120" width="190">
+      <!--Gif Uniter que esta no Cabeçalho da Tabela, e posicionamento para não ficar desproporcional a pagina-->
+    <h1><b>ATIVIDADE PRÁTICA</b></h1> <!--Titulo-->
+    <p class="especial"><b>Ferramentas de Desesnvolvimento Web - Atividade Prática!</b></p> <!--Subtitulo-->
+
+        <div class="content"></div>
+            <table class="rTable">
+
+              <thead>
+                <tr> <!-- Oque cada coluna vai receber-->
+                  <th> ALUNO</th>
+                  <th> RU</th>
+                  <th> CURSOS</th>
+                  <th> DATA DE NASCIMENTO</th>
+                </tr>
+
+              </thead>
+              <tbody>
+                <tr *ngFor="let people of data">
+                    <td><b>{{people.Name}}</b></td>
+                    <td><b>{{people.RUS}}</b></td>
+                    <td><b>{{people.CURSOS}}</b></td>
+                    <td><b>{{people.DN}}</b></td>
+                  </tr>
+              </tbody>
+            </table>
+        <div></div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+*{margin: 0; padding: 0; box-sizing:border-box ;}
+.content{ display: flex; margin: auto;}
+.rTable{ width: 100%; text-align: center;}
+.rTable thead{background: black;font-weight: bold; color: white}
+.rTable tbody tr:nth-child(odd) {background: grey;}
+.rTable tbody tr:nth-child(even) {background: silver;} /*Colocar a cor selecionada pulando uma linha*/
+.rTable th , .rTable td{padding: 6px;}
+
+
+@media screen and (max-width: 480px){
+    .content{width: 96%;}
+    .rTable thead{display: none;}
+    .rTable tbody td{display: flex; flex-direction: column;}
+}
+
+
+@media only screen and (min-width: 1900px){
+    .content {width: 100%;} /* Dimençao das linhas na pagina*/
+
+    .rTable tbody tr td:nth-child(1){width: 10%;}
+    .rTable tbody tr td:nth-child(1){width: 30%;}
+    .rTable tbody tr td:nth-child(1){width: 20%;}
+    .rTable tbody tr td:nth-child(1){width: 25%;}
+    .rTable tbody tr td:nth-child(1){width: 15%;}
+} /*  */
+
+img {
+    border-radius: 5%; align-items: flex-center;/*background: navy;*/
+    /* Como optei por uma imagem em .png adicionei um Backgraund Black*/
+    /*Como a logo uninter deve ficar...*/
+}
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_960_720.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    /*background-size: cover;*/
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  } /* Body com a imagem de fundo do site e seus ajustes...*/
+
+.centro{
+    background-color: orangered;
+    width: 300px ;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
